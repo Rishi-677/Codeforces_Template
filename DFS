@@ -1,0 +1,24 @@
+void DFSIterative(vector<vector<int>>& graph, int start) 
+{
+    int n = graph.size();
+    vector<bool> visited(n, false);
+    stack<int> s;
+
+    s.push(start);
+  
+    while (!s.empty())
+    {
+        int node = s.top();
+        s.pop();
+
+        if (!visited[node]) 
+           {
+            visited[node] = true;
+            cout << node << " ";
+
+            for (int neighbor : graph[node]) 
+                if (!visited[neighbor]) 
+                    s.push(neighbor);
+            }
+     }
+}
