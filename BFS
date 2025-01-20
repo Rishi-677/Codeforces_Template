@@ -14,7 +14,7 @@ void BFS(vector<vector<int>>& graph, int start)
         cout << node << " ";
 
         for (int neighbor : graph[node]) 
-           {
+          {
             if (!visited[neighbor]) 
               {
                 visited[neighbor] = true;
