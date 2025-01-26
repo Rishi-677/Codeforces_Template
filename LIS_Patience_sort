@@ -1,0 +1,19 @@
+1)Each element represents the smallest possible ending value of an increasing subsequence of length i+1.
+2)For each element in the array:
+   Use binary search to find the position in lis where the element can replace a larger value.
+   If the element is larger than all elements in lis, append it.
+The length of lis is the length of the LIS.
+
+int LIS_BinarySearch(const vector<int>& arr) 
+{
+    vector<int> lis;
+    for (int x : arr) 
+    {
+        auto it = lower_bound(lis.begin(), lis.end(), x);
+        if (it == lis.end()) 
+            lis.push_back(x);
+        else 
+            *it = x;
+    }
+    return lis.size();
+}
