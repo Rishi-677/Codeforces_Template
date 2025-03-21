@@ -45,7 +45,12 @@ long long inv(long long base, long long exp, long long mod)
 }
 void solve()
 {
-
+//For 1500 problems ,they are mostly of type
+//1)Problem can divided into normal problem and additional constraint with small sample space , here we brute force
+//2)Dp
+//3)Constructive algo where we do greedy
+//4)When we have to minimize,maximize something but cant find the algo which will do it, but for a given value we can find if its possible or not, we do binary search
+//5)When we have to check a lot of cases, if "case x is possible , it would satisfy case y" also , hence cases to check would reduce
 }
 int main()
 {
