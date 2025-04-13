@@ -1,0 +1,5 @@
+1)to find all factors of a number , hv to iterate till root(x) and find all 
+
+2)to find prime factorization of small number , like <=1e7 , use sieve and SPF , give in log(x)
+3)to find prime factorization of a big number , hv to find powers of 2 , then iterate over the odd numbers till root(x) 
+4)to find prime factorization of a big number , hv to find all primes till root(x) , then iterate over primes to calculate each exponent , hence TC reduced slightly
