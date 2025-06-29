@@ -1,0 +1,4 @@
+//1) in nested loops check for i and j
+//2) overflow 
+//3) if u do --it, it will reduce the iterator to the prvs position , so if u want to access tht element,then directly do *it
+//4) in 2 ptrs or anything , always check carefully , which variable is used where
